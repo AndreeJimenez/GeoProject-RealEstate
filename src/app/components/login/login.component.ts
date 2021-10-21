@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsService } from "src/app/services/news/news.service";
+import { PropertiesService } from "src/app/services/properties/properties.service";
 
 @Component({
   selector: 'app-login',
@@ -11,7 +11,7 @@ export class LoginComponent implements OnInit {
   userGoogle: any;
 
   constructor(
-    private newsService: NewsService
+    private propertiesService: PropertiesService
   ) {}
 
   ngOnInit(): void {
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   async onLoginWithGoogle(): Promise<void> {
     try {
-      this.userGoogle = await this.newsService.loginWithGoogle();
+      this.userGoogle = await this.propertiesService.loginWithGoogle();
       this.isLogged = true;
       console.log('Usuario de google', this.userGoogle);
     } catch (error) {

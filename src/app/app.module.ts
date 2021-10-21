@@ -17,6 +17,9 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 
+// Leaflet Map
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +34,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
+
+    LeafletModule
   ],
   providers: [],
   bootstrap: [AppComponent]

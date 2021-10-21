@@ -1,0 +1,9 @@
+<div class="cards-list" *ngFor="let item of properties; index as index">
+  <div id="card">
+    <div class="col-12 col-md-4 cardProperty">
+      <img src="{{ item.Image }}" alt="{{ item.Name }}">
+      <p class="propertyName">{{ item.Name }}</p>
+      <p class="propertyStatus">{{ item.Category }} / {{ item.Status }}</p>
+    </div>
+  </div>
+</div>

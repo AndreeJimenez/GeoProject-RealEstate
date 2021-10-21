@@ -1,0 +1,38 @@
+img {
+  width: 100%;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: 10px;
+}
+a {
+  color: #fff !important;
+}
+p {
+  margin: 0;
+}
+
+.propertyName {
+  font-weight: bold;
+  margin-bottom: .5rem;
+  padding-left: 10px;
+}
+.propertyStatus {
+  margin-bottom: 1.5rem;
+  padding-left: 10px;
+}
+
+.cardProperty {
+  background-color: rgb(255, 228, 228);
+  margin-bottom: 30px;
+  border-radius: 25px;
+  max-width: 100%;
+  padding: 1px;
+  transition: .5s ease-in-out all;
+}
+@media (min-width: 600px) {
+  .cardProperty {
+    max-width: 92%;
+  }
+}
+.cardProperty:hover {
+  transform:scale(1.1);
+}

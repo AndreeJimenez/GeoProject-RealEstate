@@ -7,7 +7,11 @@ const routes: Routes = [
     path: '',
     component: HomeTemplateComponent,
     children: [
-      {path: '**', redirectTo: 'news'}
+      {
+        path: 'bomberos',
+        loadChildren: () => import('../components/components.module').then((m) => m.ComponentsModule),
+      },
+      {path: '**', redirectTo: 'bomberos'}
     ]
   },
   {path: '**', redirectTo: ''}
